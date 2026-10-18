@@ -140,6 +140,20 @@
     @media(max-width:900px){.service-options{grid-template-columns:1fr}.service-shortcuts{padding-left:59px}.mini-services{grid-template-columns:repeat(2,minmax(0,1fr))}.brand-panel{align-items:flex-start;flex-direction:column;gap:19px}}
     @media(max-width:660px){.service-options{margin-top:-25px;padding:20px;border-radius:17px;gap:17px}.service-options-heading{gap:11px}.service-shortcuts{padding-left:0;gap:8px}.service-shortcut{flex:1 1 135px;font-size:11px;padding:11px 8px}.new-section{padding-top:42px}.mini-services{gap:10px}.mini-service{padding:19px 16px}.mini-service h3{font-size:14px}.brand-panel{padding:23px 21px;margin-top:31px}.brand-pills{width:100%}.brand-pill{flex:1;min-width:115px;min-height:60px;padding:12px}}
     @media(max-width:390px){.mini-services{grid-template-columns:1fr}.mini-service{min-height:auto}.service-shortcut{flex:1 1 100%}.brand-pills{flex-direction:column;align-items:stretch}.brand-pill{width:100%}}
+
+    /* Verified original brand assets and all-brand maintenance emphasis */
+    .brand-pill{overflow:hidden;position:relative;flex-direction:column;gap:8px;min-width:175px;min-height:115px;padding:14px 18px;text-align:center}
+    .brand-logo{display:block;max-width:100%;object-fit:contain}
+    .brand-logo.lgchem{width:180px;height:52px}
+    .brand-logo.aquaplus-photo{width:152px;height:77px;object-position:center 42%;border-radius:8px}
+    .brand-caption{display:block;font:800 11px/1.3 "Manrope",sans-serif;letter-spacing:.09em;color:#5b7082}
+    .brand-caption.lgchem{color:#697784}
+    .all-brand-message{display:flex;align-items:center;gap:14px;margin-top:21px;padding:18px 22px;border:1px solid #d9e9f1;border-left:3px solid var(--gold);background:#fff;border-radius:14px;color:#1d3f58}
+    .all-brand-icon{display:grid;place-items:center;flex:none;height:39px;width:39px;border-radius:12px;background:#eef6fb;color:var(--blue)}
+    .all-brand-icon svg{height:21px;width:21px}
+    .all-brand-message strong{display:block;font:800 15px/1.35 "Manrope",sans-serif;letter-spacing:-.02em}
+    .all-brand-message p{margin:5px 0 0;font-size:12px;line-height:1.6;color:#637e90}
+    @media(max-width:660px){.brand-pill{min-height:110px}.brand-logo.lgchem{width:172px;max-width:95%}.all-brand-message{padding:16px;align-items:flex-start}}
   </style>
 </head>
 <body>
@@ -175,7 +189,7 @@
       <div>
         <div class="eyebrow">ULTİMATİVE SU ARITMA</div>
         <h1 id="hero-title">Suyun kalitesine <span>değer katıyoruz.</span></h1>
-        <p class="hero-lead">Su arıtma çözümleri, kurulum ve destek ihtiyaçlarınız için yanınızdayız. Bize kolayca ulaşın, bilgi alın veya hizmetlerimizi değerlendirin.</p>
+        <p class="hero-lead">Su arıtma çözümleri, kurulum ve teknik destek için yanınızdayız. <strong>Her marka su arıtma cihazına bakım ve filtre değişimi</strong> hizmetimiz mevcuttur.</p>
         <div class="hero-actions">
           <a class="cta cta-primary" href="https://wa.me/905356203566?text=Merhaba%20ULT%C4%B0MAT%C4%B0VE%20SU%20ARITMA%2C%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener noreferrer"><svg><use href="#icon-chat"/></svg> WhatsApp'tan Ulaşın <svg><use href="#icon-arrow"/></svg></a>
           <a class="cta cta-secondary" href="#baglantilar">Tüm bağlantılar <svg><use href="#icon-arrow"/></svg></a>
@@ -203,7 +217,7 @@
   <section class="container service-options" id="servis-talebi" aria-label="Servis talebi">
     <div class="service-options-heading">
       <span class="service-options-icon"><svg><use href="#icon-chat"/></svg></span>
-      <span><strong>Servis talebi oluşturun</strong><small>İhtiyacınızı seçin, hazır mesajınız WhatsApp'ta açılsın.</small></span>
+      <span><strong>Servis talebi oluşturun</strong><small>Markası ne olursa olsun, cihazınız için bakım veya filtre değişimi talebi gönderin.</small></span>
     </div>
     <div class="service-shortcuts">
       <a class="service-shortcut" href="https://wa.me/905356203566?text=Merhaba%20ULT%C4%B0MAT%C4%B0VE%20SU%20ARITMA%2C%20filtre%20de%C4%9Fi%C5%9Fimi%20i%C3%A7in%20servis%20talebi%20olu%C5%9Fturmak%20istiyorum.%20%C4%B0l%C3%A7e%20%2F%20mahalle%3A%20...%20Cihaz%20modeli%20(varsa)%3A%20..." target="_blank" rel="noopener noreferrer">Filtre değişimi <svg><use href="#icon-arrow"/></svg></a>
@@ -220,18 +234,31 @@
       </div>
       <div class="mini-services">
         <article class="mini-service"><span class="mini-service-number">01 /</span><h3>Su Arıtma Cihazları</h3><p>İhtiyacınıza uygun cihaz seçenekleri ve ürün bilgilendirmesi.</p></article>
-        <article class="mini-service"><span class="mini-service-number">02 /</span><h3>Filtre Değişimi</h3><p>Filtre kontrolü, değişimi ve periyodik bakım desteği.</p></article>
+        <article class="mini-service"><span class="mini-service-number">02 /</span><h3>Filtre Değişimi</h3><p>Her marka su arıtma cihazına uygun filtre değişimi desteği.</p></article>
         <article class="mini-service"><span class="mini-service-number">03 /</span><h3>Kurulum &amp; Montaj</h3><p>Su arıtma cihazları için kurulum ve montaj hizmeti.</p></article>
-        <article class="mini-service"><span class="mini-service-number">04 /</span><h3>Teknik Servis</h3><p>Arıza tespiti, bakım ve cihaz desteği için iletişim.</p></article>
+        <article class="mini-service"><span class="mini-service-number">04 /</span><h3>Her Marka Teknik Servis</h3><p>Tüm marka su arıtma cihazları için bakım ve arıza desteği.</p></article>
+      </div>
+      <div class="all-brand-message" aria-label="Tüm markalara servis">
+        <span class="all-brand-icon"><svg><use href="#icon-check"/></svg></span>
+        <div>
+          <strong>Her marka su arıtma cihazına bakım ve filtre değişimi</strong>
+          <p>Cihazınızın markası ne olursa olsun, bakım ve filtre değişimi talepleriniz için bize ulaşabilirsiniz. Uygun filtre ve parça seçimi cihaz modeline göre değerlendirilir.</p>
+        </div>
       </div>
       <div class="brand-panel" id="markalar" aria-label="Çalıştığımız markalar">
         <div class="brand-panel-head">
           <div class="section-kicker">ÇALIŞTIĞIMIZ MARKALAR</div>
-          <p>Ürün ve çözüm seçeneklerimizde yer alan markalar.</p>
+          <p>LG Chem membran çözümleri ve AquaPlus su arıtma ürünleri.</p>
         </div>
         <div class="brand-pills">
-          <span class="brand-pill" aria-label="LG"><span class="brand-lg">LG</span></span>
-          <span class="brand-pill" aria-label="Aqua Plus"><span class="brand-aqua">Aqua<span>Plus</span></span></span>
+          <a class="brand-pill" href="https://www.lgchem.com/company/company-information/ci?lang=en_US" target="_blank" rel="noopener noreferrer" aria-label="LG Chem resmî sitesi">
+            <img class="brand-logo lgchem" src="https://www.lgchem.com/asset/images/common/company/ci-logo2.png" alt="LG Chem resmî logosu" width="180" height="54" loading="lazy" decoding="async">
+            <span class="brand-caption lgchem">LG CHEM</span>
+          </a>
+          <a class="brand-pill" href="https://www.aquaplus.com.tr/" target="_blank" rel="noopener noreferrer" aria-label="AquaPlus resmî sitesi">
+            <img class="brand-logo aquaplus-photo" src="https://www.aquaplus.com.tr/wp-content/uploads/2019/05/yeni44555.png" alt="AquaPlus markalı orijinal su arıtma ürünleri" width="152" height="77" loading="lazy" decoding="async">
+            <span class="brand-caption">AQUAPLUS</span>
+          </a>
         </div>
       </div>
     </div>
