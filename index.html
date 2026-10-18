@@ -155,6 +155,8 @@ h2 {
     font-size: 12px;
     letter-spacing: 1px;
 }
+
+.iban-card{margin-top:16px;padding:18px 16px;background:#f1faff;border:1px solid #cce8f5;border-radius:18px;color:#0b3155}.iban-heading{font-size:18px;font-weight:800;margin-bottom:14px}.iban-label{font-size:12px;text-transform:uppercase;letter-spacing:.8px;color:#638199;margin:12px 0 4px}.iban-value{font-size:16px;font-weight:750;overflow-wrap:anywhere}.iban-number{font-variant-numeric:tabular-nums;line-height:1.7}.copy-iban{width:100%;border:0;border-radius:13px;padding:14px;margin-top:15px;background:#087fc1;color:#fff;font-size:16px;font-weight:750;cursor:pointer}.copy-iban-note{text-align:center;min-height:18px;font-size:12px;color:#28734b;margin:9px 0 0}
 </style>
 </head>
 
@@ -291,7 +293,9 @@ h2 {
 
     </div>
 
-    <p class="note">
+    
+<section class="iban-card" aria-label="Banka ve IBAN bilgileri"><div class="iban-heading">🏦 Havale / EFT Bilgileri</div><div class="iban-label">Hesap sahibi</div><div class="iban-value">Büşra CIRIK</div><div class="iban-label">Banka</div><div class="iban-value">Enpara</div><div class="iban-label">IBAN</div><div class="iban-value iban-number">TR67 0015 7000 0000 0117 7864 97</div><button class="copy-iban" type="button" id="copyIban">📋 IBAN'ı Kopyala</button><p class="copy-iban-note" id="copyIbanNote" aria-live="polite"></p></section>
+<p class="note">
         Bizi tercih ettiğiniz için teşekkür ederiz.
     </p>
 
@@ -301,6 +305,8 @@ h2 {
 
 </div>
 
+
+<script>document.getElementById('copyIban').addEventListener('click',async function(){const iban='TR670015700000000117786497',note=document.getElementById('copyIbanNote');try{if(navigator.clipboard&&window.isSecureContext){await navigator.clipboard.writeText(iban)}else{const f=document.createElement('textarea');f.value=iban;f.style.position='fixed';f.style.opacity='0';document.body.appendChild(f);f.select();const ok=document.execCommand('copy');f.remove();if(!ok)throw Error('copy failed')}note.textContent='IBAN kopyalandı.';this.textContent='✓ Kopyalandı'}catch(e){note.textContent='Kopyalanamadı. IBAN numarasını seçip kopyalayabilirsiniz.'}});</script>
 </body>
 </html>  
  
