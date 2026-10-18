@@ -109,6 +109,37 @@
     @media(max-width:660px){.container{width:min(100% - 34px,520px)}.nav{min-height:72px}.brand-symbol{width:42px;height:42px}.brand-type strong{font-size:13px}.brand-type small{font-size:9px}.nav-location{display:none}.nav-call{padding:11px 12px;font-size:12px}.hero{padding:64px 0 93px}.hero-grid{grid-template-columns:1fr;gap:22px}h1{font-size:clamp(39px,9.5vw,56px);margin:23px 0}.hero-lead{font-size:14px;max-width:480px}.hero-actions{gap:10px}.cta{padding:15px 17px;font-size:13px}.art-panel{width:min(100%,320px);max-height:300px;aspect-ratio:1.2/1;margin-top:8px}.art-floating{font-size:10px;padding:10px 12px}.art-floating.bottom{left:0;bottom:6%}.art-floating:not(.bottom){top:5%}.section{padding-top:39px}.section-head{display:block}.section-intro{margin-top:12px}.action-grid{gap:12px}.action-card{min-height:195px;padding:19px 17px}.action-name{font-size:15px;margin-top:19px}.action-desc{font-size:12px}.action-icon{width:44px;height:44px}.bank-section{padding:48px 0 56px}.bank-shell{grid-template-columns:1fr}.bank-intro{padding:31px}.bank-intro:after{right:-130px;bottom:-170px}.bank-symbol{margin-top:18px}.bank-info{padding:30px}.closing-inner{align-items:start;flex-direction:column;gap:14px}.closing-text{text-align:left}}
     @media(max-width:390px){.nav-call span{display:none}.nav-call{padding:11px}.cta{width:100%}.action-grid{grid-template-columns:1fr}.action-card{min-height:auto}.action-name{margin-top:16px}.action-desc{margin-bottom:14px}.art-panel{max-height:260px}.copy-status{display:block;margin:10px 0 0}}
     @media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;transition:none!important}}
+
+    /* Minimal add-ons: existing VIP navy, blue, cream and gold palette remains */
+    .new-section{padding:55px 0 0}
+    .new-section .section-head{margin-bottom:21px}
+    .new-section h2{font-size:clamp(24px,2.65vw,32px)}
+    .service-options{position:relative;z-index:2;margin-top:-29px;padding:23px 25px;display:grid;grid-template-columns:minmax(210px,1fr) auto;gap:24px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:20px;box-shadow:0 16px 42px rgba(10,35,59,.09)}
+    .service-options-heading{display:flex;align-items:center;gap:14px}
+    .service-options-icon{display:grid;place-items:center;width:45px;height:45px;flex-shrink:0;border-radius:13px;color:var(--blue);background:#eaf5fb}
+    .service-options-icon svg{width:23px;height:23px}
+    .service-options-heading strong{display:block;font:800 15px/1.35 "Manrope",sans-serif;color:var(--ink)}
+    .service-options-heading small{display:block;color:var(--muted);font-size:12px;line-height:1.55;margin-top:4px}
+    .service-shortcuts{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+    .service-shortcut{display:inline-flex;align-items:center;justify-content:center;gap:7px;padding:11px 13px;border-radius:11px;border:1px solid #dbe7f0;background:#f8fbfd;font-size:12px;font-weight:800;color:#1b5478;transition:background .2s,border-color .2s}
+    .service-shortcut:hover{background:#edf6fb;border-color:#9ac9e6}
+    .service-shortcut svg{width:14px;height:14px}
+    .mini-services{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:13px}
+    .mini-service{background:#fff;border-radius:18px;border:1px solid var(--line);padding:22px 19px 21px}
+    .mini-service-number{color:#c29d68;font:800 12px "Manrope",sans-serif;letter-spacing:.08em}
+    .mini-service h3{color:#183952;font:800 15px/1.4 "Manrope",sans-serif;letter-spacing:-.03em;margin:15px 0 7px}
+    .mini-service p{font-size:12px;color:#718493;line-height:1.65;margin:0}
+    .brand-panel{display:flex;align-items:center;justify-content:space-between;gap:28px;padding:28px 32px;margin-top:42px;border-radius:18px;border:1px solid #e3ebf1;background:linear-gradient(110deg,#fff,#f9fcfe)}
+    .brand-panel-head .section-kicker{margin-bottom:7px}
+    .brand-panel-head p{margin:0;color:#718493;font-size:12px;line-height:1.7}
+    .brand-pills{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+    .brand-pill{display:flex;min-width:160px;min-height:67px;align-items:center;justify-content:center;border:1px solid #e0e8ee;border-radius:12px;background:#fff;padding:14px 22px}
+    .brand-lg{font:800 31px/1 "Manrope",sans-serif;letter-spacing:-.11em;color:#bd2537}
+    .brand-aqua{font:800 18px/1.2 "Manrope",sans-serif;letter-spacing:-.04em;color:#1778b8}
+    .brand-aqua span{color:#2e4a65}
+    @media(max-width:900px){.service-options{grid-template-columns:1fr}.service-shortcuts{padding-left:59px}.mini-services{grid-template-columns:repeat(2,minmax(0,1fr))}.brand-panel{align-items:flex-start;flex-direction:column;gap:19px}}
+    @media(max-width:660px){.service-options{margin-top:-25px;padding:20px;border-radius:17px;gap:17px}.service-options-heading{gap:11px}.service-shortcuts{padding-left:0;gap:8px}.service-shortcut{flex:1 1 135px;font-size:11px;padding:11px 8px}.new-section{padding-top:42px}.mini-services{gap:10px}.mini-service{padding:19px 16px}.mini-service h3{font-size:14px}.brand-panel{padding:23px 21px;margin-top:31px}.brand-pills{width:100%}.brand-pill{flex:1;min-width:115px;min-height:60px;padding:12px}}
+    @media(max-width:390px){.mini-services{grid-template-columns:1fr}.mini-service{min-height:auto}.service-shortcut{flex:1 1 100%}.brand-pills{flex-direction:column;align-items:stretch}.brand-pill{width:100%}}
   </style>
 </head>
 <body>
@@ -163,6 +194,45 @@
         </div>
         <div class="art-floating"><svg><use href="#icon-droplet"/></svg> Su arıtma çözümleri</div>
         <div class="art-floating bottom"><svg><use href="#icon-check"/></svg> Kolay iletişim &amp; destek</div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Servis talebi: hazır WhatsApp mesajları, kullanıcıdan web üzerinde kişisel veri toplamadan -->
+  <section class="container service-options" id="servis-talebi" aria-label="Servis talebi">
+    <div class="service-options-heading">
+      <span class="service-options-icon"><svg><use href="#icon-chat"/></svg></span>
+      <span><strong>Servis talebi oluşturun</strong><small>İhtiyacınızı seçin, hazır mesajınız WhatsApp'ta açılsın.</small></span>
+    </div>
+    <div class="service-shortcuts">
+      <a class="service-shortcut" href="https://wa.me/905356203566?text=Merhaba%20ULT%C4%B0MAT%C4%B0VE%20SU%20ARITMA%2C%20filtre%20de%C4%9Fi%C5%9Fimi%20i%C3%A7in%20servis%20talebi%20olu%C5%9Fturmak%20istiyorum.%20%C4%B0l%C3%A7e%20%2F%20mahalle%3A%20...%20Cihaz%20modeli%20(varsa)%3A%20..." target="_blank" rel="noopener noreferrer">Filtre değişimi <svg><use href="#icon-arrow"/></svg></a>
+      <a class="service-shortcut" href="https://wa.me/905356203566?text=Merhaba%20ULT%C4%B0MAT%C4%B0VE%20SU%20ARITMA%2C%20cihaz%20kurulumu%20i%C3%A7in%20servis%20talebi%20olu%C5%9Fturmak%20istiyorum.%20%C4%B0l%C3%A7e%20%2F%20mahalle%3A%20...%20Cihaz%20modeli%20(varsa)%3A%20..." target="_blank" rel="noopener noreferrer">Cihaz kurulumu <svg><use href="#icon-arrow"/></svg></a>
+      <a class="service-shortcut" href="https://wa.me/905356203566?text=Merhaba%20ULT%C4%B0MAT%C4%B0VE%20SU%20ARITMA%2C%20ar%C4%B1za%20ve%20bak%C4%B1m%20i%C3%A7in%20servis%20talebi%20olu%C5%9Fturmak%20istiyorum.%20%C4%B0l%C3%A7e%20%2F%20mahalle%3A%20...%20Cihaz%20modeli%20(varsa)%3A%20..." target="_blank" rel="noopener noreferrer">Arıza / bakım <svg><use href="#icon-arrow"/></svg></a>
+    </div>
+  </section>
+
+  <section class="new-section" id="hizmetlerimiz" aria-labelledby="services-heading">
+    <div class="container">
+      <div class="section-head">
+        <div><div class="section-kicker">HİZMETLERİMİZ</div><h2 id="services-heading">Temiz su için her aşamada yanınızdayız.</h2></div>
+        <p class="section-intro">Cihaz seçiminden kurulum ve düzenli bakıma kadar ihtiyaç duyduğunuz çözümler.</p>
+      </div>
+      <div class="mini-services">
+        <article class="mini-service"><span class="mini-service-number">01 /</span><h3>Su Arıtma Cihazları</h3><p>İhtiyacınıza uygun cihaz seçenekleri ve ürün bilgilendirmesi.</p></article>
+        <article class="mini-service"><span class="mini-service-number">02 /</span><h3>Filtre Değişimi</h3><p>Filtre kontrolü, değişimi ve periyodik bakım desteği.</p></article>
+        <article class="mini-service"><span class="mini-service-number">03 /</span><h3>Kurulum &amp; Montaj</h3><p>Su arıtma cihazları için kurulum ve montaj hizmeti.</p></article>
+        <article class="mini-service"><span class="mini-service-number">04 /</span><h3>Teknik Servis</h3><p>Arıza tespiti, bakım ve cihaz desteği için iletişim.</p></article>
+      </div>
+      <div class="brand-panel" id="markalar" aria-label="Çalıştığımız markalar">
+        <div class="brand-panel-head">
+          <div class="section-kicker">ÇALIŞTIĞIMIZ MARKALAR</div>
+          <p>Ürün ve çözüm seçeneklerimizde yer alan markalar.</p>
+        </div>
+        <div class="brand-pills">
+          <span class="brand-pill" aria-label="LG"><span class="brand-lg">LG</span></span>
+          <span class="brand-pill" aria-label="Aqua Plus"><span class="brand-aqua">Aqua<span>Plus</span></span></span>
+        </div>
       </div>
     </div>
   </section>
