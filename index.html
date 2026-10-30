@@ -1102,6 +1102,6 @@ function refresh(){const query=normalize(input.value);catalog.querySelectorAll('
 const panel=catalog.querySelector('.product-panel:not([hidden])');let visible=0;if(panel)panel.querySelectorAll('.catalog-card,.filter-card').forEach(card=>{if(!card.hidden&&!card.closest('.brand-panel[hidden]'))visible++;});
 count.textContent=visible+' ürün'+(query?' · Arama: '+input.value.trim():'');empty.hidden=visible>0;reset.hidden=!query; }
 input.addEventListener('input',refresh);sort.addEventListener('change',refresh);reset.addEventListener('click',()=>{input.value='';refresh();input.focus();});
-catalog.querySelectorAll('.product-tab,.brand-tab').forEach(button=>button.addEventListener('click',refresh));new MutationObserver(refresh).observe(tabs,{subtree:true,attributes:true,attributeFilter:['aria-selected']});
+catalog.querySelectorAll('.product-tab,.brand-switch').forEach(button=>button.addEventListener('click',refresh));new MutationObserver(refresh).observe(tabs,{subtree:true,attributes:true,attributeFilter:['aria-selected']});
 refresh();
 })();</script></body></html>
