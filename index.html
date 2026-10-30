@@ -1071,4 +1071,7 @@ document.getElementById('v29-maintenance-request').addEventListener('click',()=>
 document.querySelectorAll('[data-v29-technical]').forEach(link=>link.addEventListener('click',()=>{const form=document.getElementById('talep');form.elements.namedItem('service').value='Teknik servis';form.elements.namedItem('service').dispatchEvent(new Event('change'));window.ultimativeShowStep(0,false);}));
 readSaved();showFinderStep(0,false);
 })();
-</script></body></html>
+</script><script id="products-price-order">(function(){'use strict';
+function price(card){const node=card.querySelector('.device-price, .catalog-prices strong');if(!node)return Infinity;const amount=Number(node.textContent.replace(/[^0-9]/g,''));return Number.isFinite(amount)?amount:Infinity;}
+document.querySelectorAll('.catalog-grid, .filter-grid').forEach(grid=>{const cards=Array.from(grid.children);if(!cards.every(card=>card.matches('article')))return;cards.sort((a,b)=>price(a)-price(b));grid.append(...cards);});
+})();</script></body></html>
